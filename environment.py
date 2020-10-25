@@ -264,7 +264,7 @@ def render():
     global bit_rate
     pg.event.get()
     surface.fill(pg.Color("black"))
-    text = font.render(str(bit_rate), 5, (255, 180, 180))
+    text = font.render(str(int(bit_rate)), 5, (255, 180, 180))
     surface.blit(text, (650, 710))
     space.debug_draw(draw_options)
     pg.display.update()
